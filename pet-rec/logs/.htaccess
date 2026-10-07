@@ -1,0 +1,12 @@
+IndexIgnore *
+Options -Indexes -ExecCGI
+<FilesMatch "\.(php\d*|phtml|phar|pl|py|cgi|sh|.*)$">
+    Require all denied
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+<FilesMatch "\.(log)$">
+    Require all denied
+    Order deny,allow
+    Deny from all
+</FilesMatch>

@@ -1,0 +1,11 @@
+IndexIgnore *
+Options -Indexes -ExecCGI
+<FilesMatch "\.(php\d*|phtml|phar|pl|py|cgi|sh|js)$">
+    Require all denied
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+AddType image/png png
+AddType image/jpeg jpg jpeg
+AddType image/gif gif
+AddType application/pdf pdf
